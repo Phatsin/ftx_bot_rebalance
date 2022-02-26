@@ -43,6 +43,8 @@
 
 GOOS="windows" GOARCH="amd64" go build main.go
 
+Desktop\ftxbot -acc=maker -inst=srm/usd -f_val=1500 -b_dist=0.1 -s_dist=0.1 -p_rest=222
+
 go run main.go -acc=maker -inst=srm/usd -f_val=1500 -b_dist=0.1 -s_dist=0.1 -p_rest=222
 go run main.go -acc=sponsor -inst=sol/usd -f_val=300 -b_dist=10 -s_dist=10 -p_rest=888
 go run main.go -acc=mltoken -inst=srm/usd -f_val=6000 -b_dist=0.1 -s_dist=0.1 -p_rest=222
