@@ -1,0 +1,46 @@
+
+	//{'op': 'subscribe', 'channel': 'orders'}
+	/////////////////////////
+	// data = map[string]interface{}{
+	// 	"op":      "subscribe",
+	// 	"channel": "ticker",
+	// 	"market":  "SRM/USD",
+	// }
+
+	// out, err = json.Marshal(data)
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// fmt.Println("send:", string(out))
+
+	// err = c.WriteMessage(websocket.TextMessage, []byte(string(out)))
+	// //eerr := c.WriteJSON(string(out))
+	// if err != nil {
+	// 	log.Println("write:", err)
+	// 	return
+	// }
+
+	//////////////////
+
+
+			// err := c.WriteMessage(websocket.TextMessage, []byte("test===>"))
+			// if err != nil {
+			// 	log.Println("write:", err)
+			// 	return
+			// }
+
+			//dt := time.Now()
+
+			//log.Println("loop:", dt.String())
+
+						/////////////////
+			// _, message, err := c.ReadMessage()
+			// if err != nil {
+			// 	log.Println("read:", err)
+			// 	return
+			// }
+			// log.Printf("recv: %s", message)
+
+go run main.go -acc=maker -inst=srm/usd -f_val=1500 -b_dist=0.1 -s_dist=0.1 -p_rest=222
+go run main.go -acc=sponsor -inst=sol/usd -f_val=300 -b_dist=10 -s_dist=10 -p_rest=888
+go run main.go -acc=mltoken -inst=srm/usd -f_val=6000 -b_dist=0.1 -s_dist=0.1 -p_rest=222
